@@ -1,0 +1,16 @@
+# Use the official Python image as the base
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy requirements file and install dependencies
+COPY scraper/requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the scraper source code into the container
+COPY scraper/ /app
+
+# Assuming main.py is the entry point to run all scrapers; adjust as necessary
+CMD ["python3", "main.py"]

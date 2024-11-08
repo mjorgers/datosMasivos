@@ -1,0 +1,10 @@
+# Use the official NGINX image as a base
+FROM nginx:alpine
+
+# Copy static files (HTML, CSS, JS) from the local 'webapp' directory to the NGINX default web root
+COPY webapp /usr/share/nginx/html
+
+# Expose the default HTTP port
+EXPOSE 80
+
+# The default command is already set to start NGINX in the base image

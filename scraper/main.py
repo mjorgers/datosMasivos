@@ -26,7 +26,11 @@ class StockPriceFetcher:
 
         return json.dumps(stock_prices, indent=4)
 
-if __name__ == "__main__":
-    stock_fetcher = StockPriceFetcher(['MKHO-MY', 'UVPOF', 'SOPS-MY'])
-    stock_prices_json = stock_fetcher.fetch_stock_prices()
-    print(stock_prices_json)
+
+stock_fetcher = StockPriceFetcher(['MKHO-MY', 'UVPOF', 'SOPS-MY'])
+stock_prices_json = stock_fetcher.fetch_stock_prices()
+print(stock_prices_json)
+
+"""
+Right now it's only doing a single request and then it stops, but it should be able to run as a daemon updating the prices whenever it's called.
+"""
