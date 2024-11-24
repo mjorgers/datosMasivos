@@ -1,0 +1,14 @@
+# Use the official MongoDB image as the base
+# Current stable Release is 8.0
+FROM mongo:8.0
+
+# Set up a default environment variable for the database path
+ENV MONGO_INITDB_ROOT_USERNAME=admin
+ENV MONGO_INITDB_ROOT_PASSWORD=example
+
+# Optional: Copy any initialization scripts to the image
+# These scripts will run when the MongoDB container starts
+COPY ./database /docker-entrypoint-initdb.d/
+
+# Expose MongoDB port
+EXPOSE 27017

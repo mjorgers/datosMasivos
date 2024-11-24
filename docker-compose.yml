@@ -9,6 +9,7 @@ services:
       - "8080:80"
     depends_on:
       - api
+      - datawarehouse
 
   api:
     build:
@@ -21,3 +22,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.scraper
+
+  datawarehouse:
+    build:
+      context: .
+      dockerfile: Dockerfile.datawarehouse
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: example
