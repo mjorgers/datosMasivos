@@ -1,13 +1,14 @@
 import pandas as pd
 import json
 
-class CPIScraper:
+class CPIParser:
     def __init__(self, file_path):
         self.economy_iso3 = None
         self.indicator_id = None
         self.filtered_df = None
         self.file_path = file_path
         self.df = pd.read_excel(file_path)
+        self.json = None
 
     def filter_data(self, economy_iso3, indicator_id='TI.CPI.Score'):
         self.economy_iso3 = economy_iso3
@@ -18,15 +19,15 @@ class CPIScraper:
         if self.filtered_df.empty:
             print(f"No data found for Economy ISO3: {economy_iso3} and Indicator ID: {indicator_id}")
         else:
-            self.print_json()
+            self.get_json()
 
-    def print_json(self):
+    def get_json(self):
         years = [str(year) for year in range(2012, 2024)]
         data = {year: float(self.filtered_df[year].values[0]) for year in years}
-        json_data = json.dumps(data, indent=4)
-        print(json_data)
+        self.json = json.dumps(data, indent=4)
 
 # Example usage:
 if __name__ == "__main__":
-    scraper = CPIScraper('TI-CPI.xlsx')
+    scraper = CPIParser('TI-CPI.xlsx')
     scraper.filter_data(economy_iso3='ALB')
+    print(scraper.json)
