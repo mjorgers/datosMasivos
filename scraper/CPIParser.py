@@ -26,8 +26,3 @@ class CPIParser:
         data = {year: float(self.filtered_df[year].values[0]) for year in years}
         self.json = json.dumps(data, indent=4)
 
-# Example usage:
-if __name__ == "__main__":
-    scraper = CPIParser('TI-CPI.xlsx')
-    scraper.filter_data(economy_iso3='ALB')
-    print(scraper.json)

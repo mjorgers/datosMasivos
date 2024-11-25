@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import json
-
+from datetime import datetime
 
 class StockPriceFetcher:
     def __init__(self, stock_symbols):
@@ -9,7 +8,7 @@ class StockPriceFetcher:
         self.url_template = 'https://www.cnbc.com/quotes/{symbol}'
 
     def fetch_stock_prices(self):
-        stock_prices = {}
+        stock_prices = []
         for symbol in self.stock_symbols:
             url = self.url_template.format(symbol=symbol)
             response = requests.get(url)
@@ -17,11 +16,12 @@ class StockPriceFetcher:
                 soup = BeautifulSoup(response.content, 'html.parser')
                 stock_price_element = soup.find('span', class_='QuoteStrip-lastPrice')
                 if stock_price_element:
-                    stock_prices[symbol] = stock_price_element.get_text(strip=True)
-                else:
-                    stock_prices[symbol] = f"Could not find the stock price element for {symbol}."
+                    stock_prices.append({
+                        'symbol': symbol,
+                        'price': stock_price_element.get_text(strip=True),
+                        'timestamp': datetime.now().isoformat()
+                    })
             else:
-                stock_prices[
-                    symbol] = f"Failed to retrieve the webpage for {symbol}. Status code: {response.status_code}"
+                return -1
 
-        return json.dumps(stock_prices, indent=4)
+        return stock_prices
