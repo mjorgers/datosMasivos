@@ -22,7 +22,13 @@ map.on('load', function() {
 
 // Code to call the python API
 console.log("Going to call api");
-fetch('http://localhost:5001/api/ping')
+
+const stockSymbols = 'MKHO-MY,UVPOF,SOPS-MY';
+
+// Construct the URL with query parameters
+const url = `http://localhost:5001/api/stock_price?stock_symbols=${encodeURIComponent(stockSymbols)}`;
+
+fetch(url)
     .then(response => response.json())
     .then(data => {
         console.log("API Response:", data);
@@ -30,6 +36,7 @@ fetch('http://localhost:5001/api/ping')
     .catch(error => {
         console.error('Error fetching API:', error);
     });
+
 
 var tappedMarker = null;
 var selectedLocation = null;
