@@ -1,0 +1,27 @@
+{
+    "country_code": "BRA",
+    "indicators": [
+        {
+            "name": "Anticorruption policy",
+            "value": 2,
+            "last_update": "01/01/2024"
+        }
+    ],
+    "oil_mills": [
+
+        {
+            "mill" : "CPA",
+            "parent_company": "AGROPALMA",
+            "group" : "AGROPALMA",
+            "RSPO_type": "RSPO Certified, IP",
+            "RSPO_date": "7/10/2024",
+            "confidence_level": "1-Fully Verified",
+            "providence": "Par·",
+            "district": "Tail‚ndia",
+            "coordinates": {
+                "latitude": "-2,253539",
+                "longitude": "-48,58567"
+            }
+        }
+    ]
+  }
