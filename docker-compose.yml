@@ -8,24 +8,26 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - api
       - datawarehouse
+    networks:
+      - app_network
 
-  api:
+  logic:
     build:
       context: .
-      dockerfile: Dockerfile.api
+      dockerfile: Dockerfile.logic
     ports:
-      - "5001:5001"
-
-  scraper:
-    build:
-      context: .
-      dockerfile: Dockerfile.scraper
+      - "5001:5001/tcp"
     environment:
-      MONGODB_URI: mongodb://admin:example@datawarehouse:27017
-      MONGODB_USERNAME: admin
-      MONGODB_PASSWORD: example
+      MONGODB_URI: mongodb://palm:oil123!@datawarehouse:27017/palmoildatabase
+      MONGODB_USERNAME: palm
+      MONGODB_PASSWORD: oil123!
+      FILE_PATH: '/app/data/PalmOil-UML-Oct-2024.xlsx'
+      FLASK_ENV: development
+    depends_on:
+      - datawarehouse
+    networks:
+      - app_network
 
   datawarehouse:
     build:
@@ -36,3 +38,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: example
+    networks:
+      - app_network
+
+networks:
+  app_network:

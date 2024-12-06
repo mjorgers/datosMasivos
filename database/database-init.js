@@ -1,6 +1,6 @@
 db = db.getSiblingDB('palmoildatabase');
 db.createUser({
-  user: 'myuser',
-  pwd: 'mypassword',
+  user: 'palm',
+  pwd: 'oil123!',
   roles: [{ role: 'readWrite', db: 'palmoildatabase' }]
 });
