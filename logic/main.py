@@ -6,14 +6,7 @@ from etl.ExternalDataHandler import ExternalDataHandler
 from etl.DataWarehouseHandler import DataWarehouseHadler
 from wrapper.CommodityPriceScraper import CommodityPriceScraper
 
-class CustomJSONEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, ObjectId):
-            return str(obj)  # Convert ObjectId to string
-        return super().default(obj)
-
 app = Flask(__name__)
-app.json_encoder = CustomJSONEncoder  # Set the custom JSON encoder
 CORS(app)
 externalData_handler = ExternalDataHandler()
 datawarehouse_handler = DataWarehouseHadler()

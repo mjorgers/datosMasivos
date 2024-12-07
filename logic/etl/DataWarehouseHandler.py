@@ -12,7 +12,7 @@ class DataWarehouseHadler:
         self.collection = self.db['oil_mill_collection']
         
         try:
-            data = list(self.collection.find())
+            data = list(self.collection.find({}, {'_id': 0}))
             return data
         except Exception as e:
             print(f"An error occurred while reading data: {e}")
