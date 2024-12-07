@@ -35,15 +35,45 @@ podman-compose --version
 # End Technical prerequisites
 
 # Run the application
-podman-compose up
+podman-compose up --build
 
 # Test application running
 podman ps
 
 # Shutdown the application
-podman-compose up
+podman-compose down
 
 ```
+
+## APIs disponibles
+
+```
+http://localhost:5001/ # Test disponibilidad
+http://localhost:5001/api/stock_price?stock_symbols=AMZN,CMCSA # Ejemplo para obtener los precios de Amazon y Comcast
+http://localhost:5001/api/data # Lista de proveedores de aceite agrupados por paises
+
+```
+
+## Resolver Problemas
+
+Si falla all levantar el sistema puede que sea debido a la falta de un entorno para desplegar los contenedores del sistema
+
+```
+# Comprueba que hay una maquina virtual disponible
+podman machine ls 
+
+# En caso de haber ninguna
+podman machine start
+```
+
+Hay conflictos que nombre de imagenes existentes o solapamientos con puertos.
+
+```
+# Cuidado, el siguiente comando borrara todos los contenedores y otros recursos que hayas creado hasta el momento
+podman system prune -a
+
+```
+
 ## Equipo
 
 * Nuria González Hernández

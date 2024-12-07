@@ -2,12 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-class StockPriceFetcher:
+class CommodityPriceScraper:
     def __init__(self, stock_symbols):
         self.stock_symbols = stock_symbols
         self.url_template = 'https://www.cnbc.com/quotes/{symbol}'
 
-    def fetch_stock_prices(self):
+    def fetch_prices(self):
         stock_prices = []
         for symbol in self.stock_symbols:
             url = self.url_template.format(symbol=symbol)
