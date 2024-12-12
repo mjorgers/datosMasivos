@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import requests
+import json
 
 class ExternalDataHandler:
 
@@ -65,3 +66,15 @@ class ExternalDataHandler:
             country_entry["oil_mills"].append(oil_mill_data)
 
         return transformed_data
+
+# The information is not updated very often, 
+# so it is not necessary to run this script frequently.
+
+if __name__ == "__main__":
+    externalData_handler = ExternalDataHandler()
+    externalData_handler.extract()
+    transformed_data = externalData_handler.transform()
+    # save to json
+    with open('output.json', 'w') as f:
+        f.write(json.dumps(transformed_data, indent=4))
+    print("Data saved to output.json")

@@ -1,0 +1,1330 @@
+[
+    {
+        "country_code": "BRA",
+        "country_name": "Brazil",
+        "indicators": [
+            {
+                "name": "Anticorruption policy",
+                "value": 5.0,
+                "last_update": "01/01/2024"
+            }
+        ],
+        "oil_mills": [
+            {
+                "mill": "CPA",
+                "parent_company": "AGROPALMA",
+                "group": "AGROPALMA",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Acar\u00b7",
+                "coordinates": {
+                    "latitude": -2.253539,
+                    "longitude": -48.58567
+                }
+            },
+            {
+                "mill": "CRAI-AGROPAR",
+                "parent_company": "AGROPALMA",
+                "group": "AGROPALMA",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Tail\u201andia",
+                "coordinates": {
+                    "latitude": -2.526761,
+                    "longitude": -48.796625
+                }
+            },
+            {
+                "mill": "AGROPALMA",
+                "parent_company": "AGROPALMA",
+                "group": "AGROPALMA",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Tail\u201andia",
+                "coordinates": {
+                    "latitude": -2.542728,
+                    "longitude": -48.705328
+                }
+            },
+            {
+                "mill": "PARAPALMA",
+                "parent_company": "AGROPALMA",
+                "group": "AGROPALMA",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Tail\u201andia",
+                "coordinates": {
+                    "latitude": -2.543461,
+                    "longitude": -48.706247
+                }
+            },
+            {
+                "mill": "DENDE DO PARA SA DENPASA",
+                "parent_company": "DENDE DO PARA S A DENPASA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Santo Ant\u00d9nio do Tau\u00b7",
+                "coordinates": {
+                    "latitude": -1.190722,
+                    "longitude": -48.121666
+                }
+            },
+            {
+                "mill": "MEJER AGROFLORESTAL",
+                "parent_company": "BONITO - PA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Bonito",
+                "coordinates": {
+                    "latitude": -1.393611,
+                    "longitude": -47.262222
+                }
+            },
+            {
+                "mill": "MARBORGES",
+                "parent_company": "MARBORGES AGROINDUSTRIA SA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Moju",
+                "coordinates": {
+                    "latitude": -1.988672,
+                    "longitude": -48.6066
+                }
+            },
+            {
+                "mill": "BIOPALMA DA AMAZ\u2018NIA S/A MILL 02",
+                "parent_company": "BIOPALMA DA AMAZ\u2018NIA S.A. REFLORESTAMENTO IND\u2044STRIA E COM\u2026RCIO",
+                "group": "VALE S.A.",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Acar\u00b7",
+                "coordinates": {
+                    "latitude": -2.048889,
+                    "longitude": -48.278528
+                }
+            },
+            {
+                "mill": "BIOPALMA DA AMAZ\u2018NIA S/A MILL 01",
+                "parent_company": "BIOPALMA DA AMAZ\u2018NIA S.A. REFLORESTAMENTO IND\u2044STRIA E COM\u2026RCIO",
+                "group": "VALE S.A.",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Moju",
+                "coordinates": {
+                    "latitude": -2.232611,
+                    "longitude": -48.860222
+                }
+            },
+            {
+                "mill": "OLDESA OLEO DE DENDE",
+                "parent_company": "OLDESA \u201dLEO DE DEND\u00a0 S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Bahia",
+                "district": "Nazar\u00c8",
+                "coordinates": {
+                    "latitude": -13.033278,
+                    "longitude": -39.003583
+                }
+            },
+            {
+                "mill": "AGROINDUSTRIAL PALMASA SA",
+                "parent_company": "PALMASA SA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Igarap\u00c8-A\u00c1u",
+                "coordinates": {
+                    "latitude": -1.122556,
+                    "longitude": -47.656306
+                }
+            },
+            {
+                "mill": "IND\u2044STRIA E COM\u2026RCIO DE \u201dLEOS E FARELOS VEGETAIS DA AMAZ\u2018NIA LTDA",
+                "parent_company": "OPALA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Tail\u201andia",
+                "coordinates": {
+                    "latitude": -2.46,
+                    "longitude": -48.742222
+                }
+            },
+            {
+                "mill": "AMAPALMA",
+                "parent_company": "AGROPALMA",
+                "group": "AGROPALMA",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Par\u00b7",
+                "district": "Tail\u201andia",
+                "coordinates": {
+                    "latitude": -2.524553,
+                    "longitude": -48.797564
+                }
+            },
+            {
+                "mill": "TAIL\u00acNDIA",
+                "parent_company": "BELEM BIOENERGIA BRASIL S.A.",
+                "group": "BELEM BIOENERGIA BRASIL S.A.",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "3-Low Confidence",
+                "providence": "Par\u00b7",
+                "district": "Tail\u201andia",
+                "coordinates": {
+                    "latitude": -2.798097,
+                    "longitude": -48.936475
+                }
+            },
+            {
+                "mill": "TOM\u2026-A\u00abU",
+                "parent_company": "BELEM BIOENERGIA BRASIL S.A.",
+                "group": "BELEM BIOENERGIA BRASIL S.A.",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Tom\u00c8-A\u00c1u",
+                "coordinates": {
+                    "latitude": -2.892,
+                    "longitude": -48.274
+                }
+            },
+            {
+                "mill": "MARTINS BORGES AGROIND\u2044STRIA",
+                "parent_company": "MARBORGES AGROINDUSTRIA SA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Garraf\u201eo do Norte",
+                "coordinates": {
+                    "latitude": -1.9602,
+                    "longitude": -47.022789
+                }
+            },
+            {
+                "mill": "VILA NOVA AGROINDUSTRIAL",
+                "parent_company": "UNKOWN",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Par\u00b7",
+                "district": "Tom\u00c8-A\u00c1u",
+                "coordinates": {
+                    "latitude": -2.853721,
+                    "longitude": -48.234704
+                }
+            }
+        ]
+    },
+    {
+        "country_code": "COL",
+        "country_name": "Colombia",
+        "indicators": [
+            {
+                "name": "Anticorruption policy",
+                "value": 5.0,
+                "last_update": "01/01/2024"
+            }
+        ],
+        "oil_mills": [
+            {
+                "mill": "EXTRACTORA TEQUENDAMA",
+                "parent_company": "C.I. TEQUENDAMA S.A.S.",
+                "group": "DAABON GROUP",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Aracataca",
+                "coordinates": {
+                    "latitude": 10.548547,
+                    "longitude": -74.181286
+                }
+            },
+            {
+                "mill": "INDUSTRIAL AGRARIA LA PALMA S.A. (INDUPALMA)",
+                "parent_company": "INDUSTRIAL AGRARIA LA PALMA S.A. (INDUPALMA)",
+                "group": "GRUPO GRASCO",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "San Alberto",
+                "coordinates": {
+                    "latitude": 7.703464,
+                    "longitude": -73.455515
+                }
+            },
+            {
+                "mill": "PALMERAS DE LA COSTA",
+                "parent_company": "PALMERAS DE LA COSTA S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "El Copey",
+                "coordinates": {
+                    "latitude": 10.101325,
+                    "longitude": -74.0101
+                }
+            },
+            {
+                "mill": "EXTRACTORA DEL SUR DE CASANARE S.A.S.",
+                "parent_company": "EXTRACTORA DEL SUR DE CASANARE S.A.S.",
+                "group": "PALMAR DEL ORIENTE / ALIANZA TEAM",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Casanare",
+                "district": "Villanueva",
+                "coordinates": {
+                    "latitude": 4.493442,
+                    "longitude": -72.844307
+                }
+            },
+            {
+                "mill": "OLEOFLORES",
+                "parent_company": "GRUPO OLEOFLORES",
+                "group": "OLEOFLORES",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "La Paz",
+                "coordinates": {
+                    "latitude": 10.097972,
+                    "longitude": -73.235556
+                }
+            },
+            {
+                "mill": "ACEITES CIMARRONES SAS",
+                "parent_company": "AGROPECUARIA SANTA MARIA S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Aracataca",
+                "coordinates": {
+                    "latitude": 10.570139,
+                    "longitude": -74.208778
+                }
+            },
+            {
+                "mill": "AGROPECUARIA LA RIVERA GAITAN SAS",
+                "parent_company": "AGROPECUARIA LA RIVERA GAITAN SAS",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Fuente de Oro",
+                "coordinates": {
+                    "latitude": 3.409536,
+                    "longitude": -73.749542
+                }
+            },
+            {
+                "mill": "AGROPECUARIA SANTA MARIA S.A. (SAN MARTIN)",
+                "parent_company": "AGROPECUARIA SANTA MARIA S.A. SAN MARTIN",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "San Mart\u00ccn",
+                "coordinates": {
+                    "latitude": 3.515861,
+                    "longitude": -73.558333
+                }
+            },
+            {
+                "mill": "ENTREPALMAS S.A.S.",
+                "parent_company": "ENTREPALMAS S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "San Mart\u00ccn",
+                "coordinates": {
+                    "latitude": 3.564583,
+                    "longitude": -73.579412
+                }
+            },
+            {
+                "mill": "EXTRACTORA LA PAZ S.A.",
+                "parent_company": "EXTRACTORA LA PAZ S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "San Carlos de Guaroa",
+                "coordinates": {
+                    "latitude": 3.711178,
+                    "longitude": -73.272167
+                }
+            },
+            {
+                "mill": "ACEITES MORICHAL",
+                "parent_company": "ACEITES MORICHAL S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "San Carlos de Guaroa",
+                "coordinates": {
+                    "latitude": 3.92985,
+                    "longitude": -73.242775
+                }
+            },
+            {
+                "mill": "INVERSIONES LA MEJORANA S.A.S",
+                "parent_company": "INVERSIONES LA MEJORANA S.A.S",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Acac\u00ccas",
+                "coordinates": {
+                    "latitude": 3.961281,
+                    "longitude": -73.626778
+                }
+            },
+            {
+                "mill": "ALIANZA ORIENTAL S.A.",
+                "parent_company": "ALIANZA ORIENTAL S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Meta",
+                "district": "Villavicencio",
+                "coordinates": {
+                    "latitude": 3.995075,
+                    "longitude": -73.58075
+                }
+            },
+            {
+                "mill": "SAPUGA S.A.",
+                "parent_company": "SAPUGA S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Meta",
+                "district": "Puerto Gait\u00b7n",
+                "coordinates": {
+                    "latitude": 4.147981,
+                    "longitude": -72.037175
+                }
+            },
+            {
+                "mill": "HACIENDA LA CABA\u2014A S.A.",
+                "parent_company": "HACIENDA LA CABA\u2014A S.A.",
+                "group": "INPARME S.A.",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Cundinamarca",
+                "district": "Paratebueno",
+                "coordinates": {
+                    "latitude": 4.301186,
+                    "longitude": -73.35635
+                }
+            },
+            {
+                "mill": "PALMERAS SANTANA LTDA",
+                "parent_company": "PALMERAS SANTANA LTDA",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Casanare",
+                "district": "Villanueva",
+                "coordinates": {
+                    "latitude": 4.564131,
+                    "longitude": -72.907618
+                }
+            },
+            {
+                "mill": "EXTRACTORA CUSIANA LTDA",
+                "parent_company": "EXTRACTORA CUSIANA LTDA",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Casanare",
+                "district": "Villanueva",
+                "coordinates": {
+                    "latitude": 4.595056,
+                    "longitude": -72.827423
+                }
+            },
+            {
+                "mill": "PALMAR DE ALTAMIRA S.A.S.",
+                "parent_company": "PALMAR DE ALTAMIRA S.A.S.",
+                "group": "MANUELITA",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Casanare",
+                "district": "Orocu\u00c8",
+                "coordinates": {
+                    "latitude": 4.750511,
+                    "longitude": -71.682461
+                }
+            },
+            {
+                "mill": "EXTRACTORA CENTRAL S.A.",
+                "parent_company": "EXTRACTORA CENTRAL S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Sabana de Torres",
+                "coordinates": {
+                    "latitude": 7.284,
+                    "longitude": -73.6218
+                }
+            },
+            {
+                "mill": "EXTRACTORA MONTERREY  S.A.",
+                "parent_company": "EXTRACTORA MONTERREY  S.A.",
+                "group": "SACEITES",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Puerto Wilches",
+                "coordinates": {
+                    "latitude": 7.29856,
+                    "longitude": -73.88373
+                }
+            },
+            {
+                "mill": "PALMERAS DE PUERTO WILCHES S.A.",
+                "parent_company": "PALMERAS DE PUERTO WILCHES S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Puerto Wilches",
+                "coordinates": {
+                    "latitude": 7.339056,
+                    "longitude": -73.837389
+                }
+            },
+            {
+                "mill": "EXTRACTORA VIZCAYAS S.A.S.",
+                "parent_company": "EXTRACTORA VIZCAYAS S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Bol\u00ccvar",
+                "district": "Simit\u00cc",
+                "coordinates": {
+                    "latitude": 7.575389,
+                    "longitude": -73.950528
+                }
+            },
+            {
+                "mill": "COOPAR LTDA",
+                "parent_company": "COOPERATIVA PALMAS DE RISARALDA LTDA",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Norte de Santander",
+                "district": "San Jos\u00c8 de C\u02d9cuta",
+                "coordinates": {
+                    "latitude": 8.20255,
+                    "longitude": -72.548675
+                }
+            },
+            {
+                "mill": "PALMAGRO",
+                "parent_company": "PALMAGRO S.A.",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "Agust\u00ccn Codazzi",
+                "coordinates": {
+                    "latitude": 9.6514,
+                    "longitude": -73.56629
+                }
+            },
+            {
+                "mill": "EXTRACTORA SICARARE LTDA",
+                "parent_company": "EXTRACTORA SICARARE LTDA",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "Agust\u00ccn Codazzi",
+                "coordinates": {
+                    "latitude": 9.931944,
+                    "longitude": -73.262494
+                }
+            },
+            {
+                "mill": "PALMARIGUANI S.A",
+                "parent_company": "PALMARIGUANI S.A",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "Bosconia",
+                "coordinates": {
+                    "latitude": 9.936,
+                    "longitude": -73.94405
+                }
+            },
+            {
+                "mill": "PALMACEITE S.A.",
+                "parent_company": "PALMACEITE S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Ci\u00c8naga",
+                "coordinates": {
+                    "latitude": 10.6189,
+                    "longitude": -74.1689
+                }
+            },
+            {
+                "mill": "EXTRACTORA EL ROBLE S.A.",
+                "parent_company": "EL ROBLE S.A",
+                "group": "FAMAR S.A.",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Ci\u00c8naga",
+                "coordinates": {
+                    "latitude": 10.671,
+                    "longitude": -74.215165
+                }
+            },
+            {
+                "mill": "FRUPALMA S.A",
+                "parent_company": "FRUPALMA S.A",
+                "group": "EXTRACTORA FRUPALMA S.A.",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Ci\u00c8naga",
+                "coordinates": {
+                    "latitude": 10.70444,
+                    "longitude": -74.194826
+                }
+            },
+            {
+                "mill": "PALMAS OLEAGINOSAS DEL MAGDALENA LTDA (PALDEMA, PADELMA)",
+                "parent_company": "PALMAS OLEAGINOSAS DEL MAGDALENA LTDA (PALDEMA)",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Ci\u00c8naga",
+                "coordinates": {
+                    "latitude": 10.722222,
+                    "longitude": -74.2
+                }
+            },
+            {
+                "mill": "EXTRACTORA LA BELLA S.A.S.",
+                "parent_company": "EXTRACTORA LA BELLA S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Ci\u00c8naga",
+                "coordinates": {
+                    "latitude": 10.770736,
+                    "longitude": -74.177983
+                }
+            },
+            {
+                "mill": "GRADESA S.A.",
+                "parent_company": "GRASAS Y DERIVADOS S.A. (GRADESA)",
+                "group": "GRADESA S.A.",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Magdalena",
+                "district": "Ci\u00c8naga",
+                "coordinates": {
+                    "latitude": 11.002,
+                    "longitude": -74.218628
+                }
+            },
+            {
+                "mill": "GUAICARAMO S.A.",
+                "parent_company": "GUAICARAMO S.A.",
+                "group": "INPARME S.A.",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Barranca de Up\u00cca",
+                "coordinates": {
+                    "latitude": 4.478556,
+                    "longitude": -72.960694
+                }
+            },
+            {
+                "mill": "PALMAS DEL CESAR",
+                "parent_company": "PALMAS DEL CESAR S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "San Alberto",
+                "coordinates": {
+                    "latitude": 7.886,
+                    "longitude": -73.466694
+                }
+            },
+            {
+                "mill": "EXTRACTORA LA GLORIA",
+                "parent_company": "EXTRACTORA LA GLORIA S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "La Gloria",
+                "coordinates": {
+                    "latitude": 8.614083,
+                    "longitude": -73.680028
+                }
+            },
+            {
+                "mill": "ACEITES MANUELITA S.A. (YAGUARITO)",
+                "parent_company": "ACEITES MANUELITA",
+                "group": "MANUELITA",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "San Carlos de Guaroa",
+                "coordinates": {
+                    "latitude": 3.882933,
+                    "longitude": -73.341206
+                }
+            },
+            {
+                "mill": "ALIANZA DEL HUMEA S.A.S.",
+                "parent_company": "ALIANZA DEL HUMEA S.A.S.",
+                "group": "INPARME S.A.",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Cabuyaro",
+                "coordinates": {
+                    "latitude": 4.269703,
+                    "longitude": -72.981181
+                }
+            },
+            {
+                "mill": "PALMA & TRABAJO SAS",
+                "parent_company": "PALMA & TRABAJO S.A.S.",
+                "group": "DAABON GROUP",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Puerto Wilches",
+                "coordinates": {
+                    "latitude": 7.238489,
+                    "longitude": -73.800094
+                }
+            },
+            {
+                "mill": "PROCESADORA DE ACEITE ORO ROJO LTDA",
+                "parent_company": "PROCESADORA DE ACEITE ORO ROJO LTDA",
+                "group": "INDUPALMA",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Sabana de Torres",
+                "coordinates": {
+                    "latitude": 7.376089,
+                    "longitude": -73.568536
+                }
+            },
+            {
+                "mill": "OLEAGINOSAS DE COLOMBIA LTDA / OLEOCOL",
+                "parent_company": "OLECOCOL",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "3-Low Confidence",
+                "providence": "Meta",
+                "district": "Cabuyaro",
+                "coordinates": {
+                    "latitude": 4.296567,
+                    "longitude": -73.047533
+                }
+            },
+            {
+                "mill": "UNIPALMA S.A.",
+                "parent_company": "UNIPALMA S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Meta",
+                "district": "Cumaral",
+                "coordinates": {
+                    "latitude": 4.22384,
+                    "longitude": -73.255523
+                }
+            },
+            {
+                "mill": "AGROINCE LTDA Y CIA SCA",
+                "parent_company": "AGROINCE LTDA Y CIA SCA",
+                "group": "AGROINDUSTRIAS DEL SUR DEL CESAR LIMITADA",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "R\u00cco de Oro",
+                "coordinates": {
+                    "latitude": 8.110308,
+                    "longitude": -73.574628
+                }
+            },
+            {
+                "mill": "BIOPLANTA PALMERA PARA EL DESARROLLO S.A.",
+                "parent_company": "BIOPLANTA PALMERA PARA EL DESARROLLO S.A.",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Antioquia",
+                "district": "Chigorod\u00db",
+                "coordinates": {
+                    "latitude": 7.567717,
+                    "longitude": -76.61233
+                }
+            },
+            {
+                "mill": "EXTRACTORA MARIA LA BAJA S.A.",
+                "parent_company": "EXTRACTORA MARIA LA BAJA S.A.",
+                "group": "OLEOFLORES",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Bol\u00ccvar",
+                "district": "Mar\u00cca la Baja",
+                "coordinates": {
+                    "latitude": 9.9235,
+                    "longitude": -75.327607
+                }
+            },
+            {
+                "mill": "PALMICULTORES DEL NORTE (PALNORTE) S.A.S.",
+                "parent_company": "PALMICULTORES DEL NORTE S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Norte de Santander",
+                "district": "Tib\u02d9",
+                "coordinates": {
+                    "latitude": 8.53507,
+                    "longitude": -72.63589
+                }
+            },
+            {
+                "mill": "EXTRACTORA SAN SEBASTIANO S.A.S.",
+                "parent_company": "EXTRACTORA SAN SEBASTIANO S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Puerto Gait\u00b7n",
+                "coordinates": {
+                    "latitude": 4.10167,
+                    "longitude": -71.91972
+                }
+            },
+            {
+                "mill": "EXTRACTORA SAN FERNANDO, S.A.",
+                "parent_company": "CI TOP S.A",
+                "group": "CI TOP",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Sabana de Torres",
+                "coordinates": {
+                    "latitude": 7.25333,
+                    "longitude": -73.566361
+                }
+            },
+            {
+                "mill": "OLEAGINOSAS SAN MARCOS LTDA",
+                "parent_company": "OLEAGINOSAS SAN MARCOS LTDA",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Meta",
+                "district": "San Carlos de Guaroa",
+                "coordinates": {
+                    "latitude": 3.733154,
+                    "longitude": -73.341972
+                }
+            },
+            {
+                "mill": "ACEITES Y GRASAS DEL CATATUMBO SAS",
+                "parent_company": "ACEITES Y GRASAS DEL CATATUMBO S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Norte de Santander",
+                "district": "Tib\u02d9",
+                "coordinates": {
+                    "latitude": 8.502247,
+                    "longitude": -72.639977
+                }
+            },
+            {
+                "mill": "ASTORGA S.A.",
+                "parent_company": "CI TOP S.A",
+                "group": "CI TOP",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Nari\u00d2o",
+                "district": "Tumaco",
+                "coordinates": {
+                    "latitude": 1.591494,
+                    "longitude": -78.640644
+                }
+            },
+            {
+                "mill": "ACEITES MANUELITA S.A. (MANAVIRE)",
+                "parent_company": "ACEITES MANUELITA",
+                "group": "MANUELITA",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "San Carlos de Guaroa",
+                "coordinates": {
+                    "latitude": 3.937706,
+                    "longitude": -73.36539
+                }
+            },
+            {
+                "mill": "OLEAGINOSAS DEL OCOA",
+                "parent_company": "OLEAGINOSAS DEL OCOA",
+                "group": "C.I BIOCOSTA S.A",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Villavicencio",
+                "coordinates": {
+                    "latitude": 4.079083,
+                    "longitude": -73.693639
+                }
+            },
+            {
+                "mill": "SALAMANCA OLEAGINOSAS S.A.",
+                "parent_company": "SALAMANCA OLEAGINOSAS S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Nari\u00d2o",
+                "district": "Tumaco",
+                "coordinates": {
+                    "latitude": 1.466186,
+                    "longitude": -78.740195
+                }
+            },
+            {
+                "mill": "EXTRACTORA SANTAFE SAS",
+                "parent_company": "C.I. TOP S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Nari\u00d2o",
+                "district": "Tumaco",
+                "coordinates": {
+                    "latitude": 1.480669,
+                    "longitude": -78.662003
+                }
+            },
+            {
+                "mill": "PALMAS DE TUMACO S.A.S.",
+                "parent_company": "PALMAS DE TUMACO S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Nari\u00d2o",
+                "district": "Tumaco",
+                "coordinates": {
+                    "latitude": 1.5232,
+                    "longitude": -78.739673
+                }
+            },
+            {
+                "mill": "INDUSTRIAL ACEITERA DE CASANARE S.A.",
+                "parent_company": "INDUSTRIAL ACEITERA DE CASANARE S.A. SUCURSAL COLOMBIA S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Casanare",
+                "district": "Orocu\u00c8",
+                "coordinates": {
+                    "latitude": 5.087917,
+                    "longitude": -71.959972
+                }
+            },
+            {
+                "mill": "EXTRACTORA GRUPALMA",
+                "parent_company": "EXTRACTORA GRUPALMA S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Bol\u00ccvar",
+                "district": "Morales",
+                "coordinates": {
+                    "latitude": 8.668383,
+                    "longitude": -73.837515
+                }
+            },
+            {
+                "mill": "PALMAS OLEAGINOSAS DE CASACARE LTDA",
+                "parent_company": "PALMAS OLEAGINOSAS DE CASACARE LTDA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Cesar",
+                "district": "Agust\u00ccn Codazzi",
+                "coordinates": {
+                    "latitude": 9.856372,
+                    "longitude": -73.277009
+                }
+            },
+            {
+                "mill": "ABAGO S.A.S.",
+                "parent_company": "ABAGO S.A.S.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Puerto Gait\u00b7n",
+                "coordinates": {
+                    "latitude": 4.286556,
+                    "longitude": -72.13408
+                }
+            },
+            {
+                "mill": "PLANTA EXTRACTORA ACEITES CIMARRONES S.A.S ZFPEA",
+                "parent_company": "AGROPECUARIA SANTAMARIA S.A.",
+                "group": "AGROPECUARIA SANTAMARIA S.A",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Puerto Rico",
+                "coordinates": {
+                    "latitude": 3.036639,
+                    "longitude": -73.111456
+                }
+            },
+            {
+                "mill": "OLEAGINOSAS SANTANA",
+                "parent_company": "OLEAGINOSAS SANTANA S.A.S",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Villavicencio",
+                "coordinates": {
+                    "latitude": 3.998344,
+                    "longitude": -73.613345
+                }
+            },
+            {
+                "mill": "BIOCASTILLA",
+                "parent_company": "BIOCASTILLA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Meta",
+                "district": "Castilla la Nueva",
+                "coordinates": {
+                    "latitude": 3.821479,
+                    "longitude": -73.532639
+                }
+            },
+            {
+                "mill": "CASTILLA",
+                "parent_company": "RIOPAILA CASTILLA S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Valle del Cauca",
+                "district": "Pradera",
+                "coordinates": {
+                    "latitude": 3.367247,
+                    "longitude": -76.286729
+                }
+            },
+            {
+                "mill": "EXTRACTORA RIO PAILA CASTILLA",
+                "parent_company": "GRUPO AGROINDUSTRIAL RIO PAILA CASTILLA",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Vichada",
+                "district": "Santa Rosal\u00cca",
+                "coordinates": {
+                    "latitude": 5.03109,
+                    "longitude": -70.84156
+                }
+            },
+            {
+                "mill": "POLIGROW COLOMBIA LTDA",
+                "parent_company": "POLIGROW COLOMBIA LTDA",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, IP, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "3-Low Confidence",
+                "providence": "Meta",
+                "district": "Mapirip\u00b7n",
+                "coordinates": {
+                    "latitude": 3.012836,
+                    "longitude": -72.203053
+                }
+            },
+            {
+                "mill": "AGROVICMART",
+                "parent_company": "AGROVICMART",
+                "group": "AGROVICMART",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Casanare",
+                "district": "Aguazul",
+                "coordinates": {
+                    "latitude": 4.978,
+                    "longitude": -72.616
+                }
+            },
+            {
+                "mill": "OLEOINVERSIONES ZOMAC",
+                "parent_company": "OLEOINVERSIONES ZOMAC",
+                "group": "OLEOINVERSIONES ZOMAC",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Casanare",
+                "district": "Man\u00cc",
+                "coordinates": {
+                    "latitude": 4.689,
+                    "longitude": -72.081
+                }
+            },
+            {
+                "mill": "PALMAS OLEAGINOSAS BUCARELIA SAS",
+                "parent_company": "PALMAS OLEAGINOSAS BUCARELIA S.A.S.",
+                "group": "PALMAS OLEAGINOSAS BUCARELIA SAS",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Santander",
+                "district": "Puerto Wilches",
+                "coordinates": {
+                    "latitude": 7.22978,
+                    "longitude": -73.85034
+                }
+            },
+            {
+                "mill": "EXTRACTORA LOMA FRESCA",
+                "parent_company": "EXTRACTORA LOMA FRESCA",
+                "group": "OIL SUM ",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Bol\u00ccvar",
+                "district": "Simit\u00cc",
+                "coordinates": {
+                    "latitude": 7.528413,
+                    "longitude": -73.936587
+                }
+            },
+            {
+                "mill": "PALMEIRAS COLOMBIA S.A.",
+                "parent_company": "CI TOP S.A",
+                "group": "CI TOP",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully Verified",
+                "providence": "Nari\u00d2o",
+                "district": "Tumaco",
+                "coordinates": {
+                    "latitude": 1.4589,
+                    "longitude": -78.6869
+                }
+            },
+            {
+                "mill": "COMPA\u2014IA PALMICULTORA DEL LLANO S.A. - PALMALLANO S.A.",
+                "parent_company": "UNKNOWN",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "1-Fully verified",
+                "providence": "Meta",
+                "district": "Cabuyaro",
+                "coordinates": {
+                    "latitude": 4.346079,
+                    "longitude": -73.004524
+                }
+            },
+            {
+                "mill": "PALMERAS LA MARGARITA DIAZ MARTINEZ & CIA LTDA.",
+                "parent_company": "UNKNOWN",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Meta",
+                "district": "Acac\u00ccas",
+                "coordinates": {
+                    "latitude": 3.904905,
+                    "longitude": -73.538584
+                }
+            },
+            {
+                "mill": "PALMAR EL QUITEBE",
+                "parent_company": "PALMAR EL QUITEBE",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Casanare",
+                "district": "Nunch\u00cca",
+                "coordinates": {
+                    "latitude": 5.543793,
+                    "longitude": -71.980164
+                }
+            },
+            {
+                "mill": "OLEAGINOSAS DEL NORTE DE SANTANDER",
+                "parent_company": "OLEONORTE",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Norte de Santander",
+                "district": "El Zulia",
+                "coordinates": {
+                    "latitude": 8.201426,
+                    "longitude": -72.551283
+                }
+            },
+            {
+                "mill": "PALMERAS DEL LLANO",
+                "parent_company": "PALMERAS DEL LLANO S.A.",
+                "group": "UNKNOWN",
+                "RSPO_type": "RSPO Certified, MB",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Meta",
+                "district": "Acac\u00ccas",
+                "coordinates": {
+                    "latitude": 3.960983,
+                    "longitude": -73.627764
+                }
+            },
+            {
+                "mill": "EXTRACTORA EL ESTERO",
+                "parent_company": "EXTRACTORA EL ESTERO",
+                "group": "UNKNOWN",
+                "RSPO_type": "nan",
+                "RSPO_date": "2024-10-07",
+                "confidence_level": "2-High Confidence",
+                "providence": "Casanare",
+                "district": "Man\u00cc",
+                "coordinates": {
+                    "latitude": 4.608584,
+                    "longitude": -72.272122
+                }
+            }
+        ]
+    }
+]

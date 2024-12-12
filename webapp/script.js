@@ -1,24 +1,131 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoia29seWE3IiwiYSI6ImNsczBhdzM4dTAwYWgyaW14eHgxbm1saDMifQ.U7Q43WKnBARLAOqlJzEwTg';
 var map = new mapboxgl.Map({
         container: 'map', // container id
-        style: 'mapbox://styles/mapbox/streets-v12', // stylesheet location
+        style: 'mapbox://styles/mapbox/satellite-streets-v12',
         zoom: 0,
         attributionControl: false
 });
+
+// Add at the beginning of the file
+let stockUpdateInterval;
+
+function updateStockPrices() {
+    const url = `http://localhost:5001/api/stock_price?stock_symbols=MKHO-MY,UVPOF,SOPS-MY,GOOG,AAPL,NVDA`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('stocks-container');
+            container.innerHTML = ''; // Clear existing content
+            
+            data.stock_prices.forEach(stockData => {
+                const stockCard = document.createElement('div');
+                stockCard.className = 'stock-card';
+                
+                // Parse the timestamp
+                const timestamp = new Date(stockData.timestamp);
+                const formattedTime = timestamp.toLocaleTimeString();
+                
+                stockCard.innerHTML = `
+                    <div class="stock-symbol">${stockData.symbol}</div>
+                    <div class="stock-price">$${parseFloat(stockData.price).toFixed(2)}</div>
+                    <div class="stock-timestamp">Last updated: ${formattedTime}</div>
+                `;
+                container.appendChild(stockCard);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching stock data:', error);
+            createAlert({
+                type: "error",
+                message: "Failed to fetch stock data",
+                time: 3000
+            });
+        });
+}
+
 map.on('load', function() {
-    map.on('click', function(e) {
-        selectedLocation = {
-            lat: e.lngLat.lat,
-            lon: e.lngLat.lng
-        };
-        console.log("Selected location:", selectedLocation);
-        if (tappedMarker) {
-            tappedMarker.remove();
-        }
-        tappedMarker = new mapboxgl.Marker().setLngLat(e.lngLat).addTo(map).setPopup(new mapboxgl.Popup().setHTML("You tapped this location")).togglePopup();
+  fetch('demo.json')
+  .then(response => response.json())
+  .then(data => {
+      addOilMillMarkers(data);
+      updatePolicyData(data);
+  })
+  .catch(error => console.error('Error loading data:', error));
+    
+    // Initial stock data load
+    updateStockPrices();
+    
+    // Set up interval for updates
+    stockUpdateInterval = setInterval(updateStockPrices, 5000);
+});
+
+function updatePolicyData(data) {
+  const container = document.getElementById('policies-container');
+  container.innerHTML = ''; // Clear existing content
+  
+  data.forEach(country => {
+      const policyCard = document.createElement('div');
+      policyCard.className = 'policy-card';
+      
+      country.indicators.forEach(indicator => {
+          policyCard.innerHTML = `
+              <div class="policy-title">${country.country_name} - ${indicator.name}</div>
+              <div class="policy-value">Score: ${indicator.value}</div>
+              <div class="policy-date">Last updated: ${indicator.last_update}</div>
+          `;
+      });
+      
+      container.appendChild(policyCard);
+  });
+}
+// Add cleanup when needed (e.g., when switching pages)
+function cleanup() {
+    if (stockUpdateInterval) {
+        clearInterval(stockUpdateInterval);
+    }
+}
+
+function addOilMillMarkers(data) {
+    // Remove existing markers if needed
+    if (window.oilMillMarkers) {
+        window.oilMillMarkers.forEach(marker => marker.remove());
+    }
+    window.oilMillMarkers = [];
+
+    data.forEach(country => {
+        country.oil_mills.forEach(mill => {
+            const coordinates = [mill.coordinates.longitude, mill.coordinates.latitude];
+            
+            // Create popup content with mill details
+            const popupContent = `
+                <h3>${mill.mill}</h3>
+                <p>Parent Company: ${mill.parent_company}</p>
+                <p>Group: ${mill.group}</p>
+                <p>RSPO Type: ${mill.RSPO_type !== 'nan' ? mill.RSPO_type : 'Not certified'}</p>
+                <p>Confidence Level: ${mill.confidence_level}</p>
+                <p>Location: ${mill.providence}, ${mill.district}</p>
+            `;
+
+            // Create marker and popup
+            const marker = new mapboxgl.Marker()
+                .setLngLat(coordinates)
+                .setPopup(new mapboxgl.Popup().setHTML(popupContent))
+                .addTo(map);
+
+            window.oilMillMarkers.push(marker);
+        });
     });
 
-});
+    // Fit map to show all markers
+    if (window.oilMillMarkers.length > 0) {
+        const bounds = new mapboxgl.LngLatBounds();
+        window.oilMillMarkers.forEach(marker => {
+            bounds.extend(marker.getLngLat());
+        });
+        map.fitBounds(bounds, { padding: 50 });
+    }
+}
 
 // Code to call the python API
 console.log("Going to call api");
@@ -61,7 +168,7 @@ function switchMapTheme(theme) {
     } else if (theme === 'light') {
         style = 'mapbox://styles/mapbox/streets-v11';
     } else if (theme === 'satellite') {
-        style = 'mapbox://styles/mapbox/satellite-streets-v11';
+        style = 'mapbox://styles/mapbox/satellite-streets-v12';
     } else if (theme === 'globe' ) {
         style = 'mapbox://styles/mapbox/streets-v12';
     }
