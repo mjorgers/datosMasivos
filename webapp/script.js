@@ -58,26 +58,35 @@ map.on('load', function() {
     
     // Set up interval for updates
     stockUpdateInterval = setInterval(updateStockPrices, 5000);
+
+    createAlert({'type': 'success', 'message': 'Map loaded successfully', 'time': 3000});
 });
 
+// Update the updatePolicyData function to add click handlers
 function updatePolicyData(data) {
-  const container = document.getElementById('policies-container');
-  container.innerHTML = ''; // Clear existing content
-  
-  data.forEach(country => {
-      const policyCard = document.createElement('div');
-      policyCard.className = 'policy-card';
-      
-      country.indicators.forEach(indicator => {
-          policyCard.innerHTML = `
-              <div class="policy-title">${country.country_name} - ${indicator.name}</div>
-              <div class="policy-value">Score: ${indicator.value}</div>
-              <div class="policy-date">Last updated: ${indicator.last_update}</div>
-          `;
-      });
-      
-      container.appendChild(policyCard);
-  });
+    const container = document.getElementById('policies-container');
+    container.innerHTML = '';
+    
+    data.forEach(country => {
+        const policyCard = document.createElement('div');
+        policyCard.className = 'policy-card';
+        
+        country.indicators.forEach(indicator => {
+            policyCard.innerHTML = `
+                <div class="policy-title">${country.country_name} - ${indicator.name}</div>
+                <div class="policy-value">Score: ${indicator.value}</div>
+                <div class="policy-date">Last updated: ${indicator.last_update}</div>
+            `;
+        });
+        
+        // Add click handler
+        policyCard.style.cursor = 'pointer';
+        policyCard.addEventListener('click', () => {
+            flyToCountry(country.country_name);
+        });
+        
+        container.appendChild(policyCard);
+    });
 }
 // Add cleanup when needed (e.g., when switching pages)
 function cleanup() {
@@ -253,5 +262,40 @@ function closeModal() {
     modal.style.display = "none";
     var settingsModal = document.getElementById("settingsModal");
     settingsModal.style.display = "none";
+}
+
+// Add this new function to get country coordinates and fly to them
+function flyToCountry(countryName) {
+    // Create Geocoding API URL
+    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(countryName)}.json?access_token=${mapboxgl.accessToken}&types=country`;
+    
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.features && data.features.length > 0) {
+                const bounds = data.features[0].bbox;
+                map.fitBounds([
+                    [bounds[0], bounds[1]], // southwestern corner
+                    [bounds[2], bounds[3]]  // northeastern corner
+                ], {
+                    padding: 50,
+                    duration: 2000
+                });
+            } else {
+                createAlert({
+                    type: "error",
+                    message: `Could not find coordinates for ${countryName}`,
+                    time: 3000
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            createAlert({
+                type: "error",
+                message: "Failed to fly to country",
+                time: 3000
+            });
+        });
 }
 
