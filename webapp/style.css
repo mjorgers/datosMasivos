@@ -7,7 +7,8 @@ body {
 
 #map {
   height: calc(100vh - 50px);
-  width: 100%;
+  width: calc(100% - 300px);
+  float: left;
 }
 
 .menu {
@@ -222,4 +223,127 @@ body {
   0% { transform: translate(-50%, -50%) scale(0.1, 0.1); opacity: 0; }
   50% { opacity: 1; }
   100% { transform: translate(-50%, -50%) scale(1.2, 1.2); opacity: 0; }
+}
+
+#side-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: calc(100vh - 50px);
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.panel-header {
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.panel-content {
+  padding: 15px;
+}
+
+/* Adjust the menu to account for side panel */
+.menu {
+  width: 100%;
+  padding-right: 300px; /* Same as panel width */
+  box-sizing: border-box;
+}
+
+.stock-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stock-symbol {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.stock-price {
+  font-size: 24px;
+  color: #333;
+}
+
+.stock-change {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.price-up {
+  color: #28a745;
+}
+
+.price-down {
+  color: #dc3545;
+}
+
+.stock-loading {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+.stock-timestamp {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.panel-section {
+  height: calc(50% - 25px);
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-section {
+  border-bottom: 2px solid #ddd;
+}
+
+.policy-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.policy-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.policy-value {
+  font-size: 18px;
+  color: #333;
+}
+
+.policy-date {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.policy-card {
+  /* Add to existing policy-card styles */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.policy-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }

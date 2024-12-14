@@ -8,14 +8,29 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
   </head>
   <body>
-    <div id="floatingButton" class="floating-button">
-      <i class="fas fa-location-arrow"></i>
-    </div>
     <div id="map"></div>
+    <div id="side-panel">
+      <div class="panel-section top-section">
+        <div class="panel-header">
+          <h2>Country Policies</h2>
+        </div>
+        <div class="panel-content" id="policies-container">
+          <!-- Policy data will be inserted here -->
+        </div>
+      </div>
+      <div class="panel-section bottom-section">
+        <div class="panel-header">
+          <h2>Stock Prices</h2>
+        </div>
+        <div class="panel-content" id="stocks-container">
+          <div class="stock-loading">Loading stock data...</div>
+        </div>
+      </div>
+    </div>
     <div class="menu">
       <div class="menu-item" onclick="goToLocation()">
         <i class="fas fa-map-marker-alt menu-item-icon"></i>
-        <span class="menu-item-label">Location</span>
+        <span class="menu-item-label">Placeholder</span>
       </div>
       <div class="menu-item" onclick="openSearchModal()">
         <i class="fas fa-search menu-item-icon"></i>
