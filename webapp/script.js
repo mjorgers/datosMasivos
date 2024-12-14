@@ -1,12 +1,11 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoia29seWE3IiwiYSI6ImNsczBhdzM4dTAwYWgyaW14eHgxbm1saDMifQ.U7Q43WKnBARLAOqlJzEwTg';
 var map = new mapboxgl.Map({
-        container: 'map', // container id
-        style: 'mapbox://styles/mapbox/satellite-streets-v12',
-        zoom: 0,
-        attributionControl: false
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/satellite-streets-v12',
+    zoom: 0,
+    attributionControl: false
 });
 
-// Add at the beginning of the file
 let stockUpdateInterval;
 
 function updateStockPrices() {
@@ -17,15 +16,15 @@ function updateStockPrices() {
         .then(data => {
             const container = document.getElementById('stocks-container');
             container.innerHTML = ''; // Clear existing content
-            
+
             data.stock_prices.forEach(stockData => {
                 const stockCard = document.createElement('div');
                 stockCard.className = 'stock-card';
-                
+
                 // Parse the timestamp
                 const timestamp = new Date(stockData.timestamp);
                 const formattedTime = timestamp.toLocaleTimeString();
-                
+
                 stockCard.innerHTML = `
                     <div class="stock-symbol">${stockData.symbol}</div>
                     <div class="stock-price">$${parseFloat(stockData.price).toFixed(2)}</div>
@@ -44,18 +43,18 @@ function updateStockPrices() {
         });
 }
 
-map.on('load', function() {
-  fetch('demo.json')
-  .then(response => response.json())
-  .then(data => {
-      addOilMillMarkers(data);
-      updatePolicyData(data);
-  })
-  .catch(error => console.error('Error loading data:', error));
-    
+map.on('load', function () {
+    fetch('demo.json')
+        .then(response => response.json())
+        .then(data => {
+            addOilMillMarkers(data);
+            updatePolicyData(data);
+        })
+        .catch(error => console.error('Error loading data:', error));
+
     // Initial stock data load
     updateStockPrices();
-    
+
     // Set up interval for updates
     stockUpdateInterval = setInterval(updateStockPrices, 5000);
 
@@ -66,11 +65,11 @@ map.on('load', function() {
 function updatePolicyData(data) {
     const container = document.getElementById('policies-container');
     container.innerHTML = '';
-    
+
     data.forEach(country => {
         const policyCard = document.createElement('div');
         policyCard.className = 'policy-card';
-        
+
         country.indicators.forEach(indicator => {
             policyCard.innerHTML = `
                 <div class="policy-title">${country.country_name} - ${indicator.name}</div>
@@ -78,25 +77,18 @@ function updatePolicyData(data) {
                 <div class="policy-date">Last updated: ${indicator.last_update}</div>
             `;
         });
-        
+
         // Add click handler
         policyCard.style.cursor = 'pointer';
         policyCard.addEventListener('click', () => {
             flyToCountry(country.country_name);
         });
-        
+
         container.appendChild(policyCard);
     });
 }
-// Add cleanup when needed (e.g., when switching pages)
-function cleanup() {
-    if (stockUpdateInterval) {
-        clearInterval(stockUpdateInterval);
-    }
-}
 
 function addOilMillMarkers(data) {
-    // Remove existing markers if needed
     if (window.oilMillMarkers) {
         window.oilMillMarkers.forEach(marker => marker.remove());
     }
@@ -105,7 +97,7 @@ function addOilMillMarkers(data) {
     data.forEach(country => {
         country.oil_mills.forEach(mill => {
             const coordinates = [mill.coordinates.longitude, mill.coordinates.latitude];
-            
+
             // Create popup content with mill details
             const popupContent = `
                 <h3>${mill.mill}</h3>
@@ -132,7 +124,7 @@ function addOilMillMarkers(data) {
         window.oilMillMarkers.forEach(marker => {
             bounds.extend(marker.getLngLat());
         });
-        map.fitBounds(bounds, { padding: 50 });
+        map.fitBounds(bounds, {padding: 50});
     }
 }
 
@@ -158,16 +150,16 @@ var tappedMarker = null;
 var selectedLocation = null;
 console.log("Selected location:", selectedLocation);
 map.addLayer({
-        id: 'tileLayer',
+    id: 'tileLayer',
+    type: 'raster',
+    source: {
         type: 'raster',
-        source: {
-                type: 'raster',
-                tiles: ['https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=ZTKYDYAecEkhrCpOleVE'],
-                tileSize: 256,
-                attribution: '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-        },
-        minzoom: 0,
-        maxzoom: 19
+        tiles: ['https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=ZTKYDYAecEkhrCpOleVE'],
+        tileSize: 256,
+        attribution: '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    },
+    minzoom: 0,
+    maxzoom: 19
 });
 
 
@@ -178,7 +170,7 @@ function switchMapTheme(theme) {
         style = 'mapbox://styles/mapbox/streets-v11';
     } else if (theme === 'satellite') {
         style = 'mapbox://styles/mapbox/satellite-streets-v12';
-    } else if (theme === 'globe' ) {
+    } else if (theme === 'globe') {
         style = 'mapbox://styles/mapbox/streets-v12';
     }
     map.setStyle(style);
@@ -187,56 +179,59 @@ function switchMapTheme(theme) {
 function searchLocation() {
     var location = document.getElementById("searchInput").value;
     if (location) {
-      var url = "https://nominatim.openstreetmap.org/search?format=json&q=" + encodeURIComponent(location);
-      fetch(url).then(response => response.json()).then(data => {
-        if (data.length > 0) {
-          var results = data.map(result => ({
-            display_name: result.display_name,
-            lat: parseFloat(result.lat),
-            lon: parseFloat(result.lon)
-          }));
-          var resultsList = document.getElementById("resultsList");
-          // Clear the results list before appending new results
-          while (resultsList.firstChild) {
-            resultsList.removeChild(resultsList.firstChild);
-          }
-          results.forEach((result, index) => {
-            var resultItem = document.createElement("div");
-            resultItem.classList.add("result-item");
-            resultItem.textContent = `${index + 1}. ${result.display_name}`;
-            resultItem.addEventListener("click", function() {
-              selectLocation(index, results);
-            });
-            resultsList.appendChild(resultItem);
-          });
-          openResultsModal();
-          closeSearchModal();
-        } else {
-          alert("Location not found.");
-        }
-      }).catch(error => {
-        console.error("Error:", error);
-        alert("An error occurred while searching for the location.");
-      });
+        var url = "https://nominatim.openstreetmap.org/search?format=json&q=" + encodeURIComponent(location);
+        fetch(url).then(response => response.json()).then(data => {
+            if (data.length > 0) {
+                var results = data.map(result => ({
+                    display_name: result.display_name,
+                    lat: parseFloat(result.lat),
+                    lon: parseFloat(result.lon)
+                }));
+                var resultsList = document.getElementById("resultsList");
+                // Clear the results list before appending new results
+                while (resultsList.firstChild) {
+                    resultsList.removeChild(resultsList.firstChild);
+                }
+                results.forEach((result, index) => {
+                    var resultItem = document.createElement("div");
+                    resultItem.classList.add("result-item");
+                    resultItem.textContent = `${index + 1}. ${result.display_name}`;
+                    resultItem.addEventListener("click", function () {
+                        selectLocation(index, results);
+                    });
+                    resultsList.appendChild(resultItem);
+                });
+                openResultsModal();
+                closeSearchModal();
+            } else {
+                alert("Location not found.");
+            }
+        }).catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred while searching for the location.");
+        });
     }
 }
 
 function selectLocation(index, results) {
     if (index >= 0 && index < results.length) {
-      selectedLocation = results[index];
-      console.log("Selected location:", selectedLocation);
-      var lngLat = [selectedLocation.lon, selectedLocation.lat];
-      if (tappedMarker) {
-        tappedMarker.remove();
-      }
-      tappedMarker = new mapboxgl.Marker().setLngLat(lngLat).addTo(map).setPopup(new mapboxgl.Popup().setHTML("You selected: " + selectedLocation.display_name)).togglePopup();
-      map.flyTo({center: lngLat,
-        zoom: 16 });
+        selectedLocation = results[index];
+        console.log("Selected location:", selectedLocation);
+        var lngLat = [selectedLocation.lon, selectedLocation.lat];
+        if (tappedMarker) {
+            tappedMarker.remove();
+        }
+        tappedMarker = new mapboxgl.Marker().setLngLat(lngLat).addTo(map).setPopup(new mapboxgl.Popup().setHTML("You selected: " + selectedLocation.display_name)).togglePopup();
+        map.flyTo({
+            center: lngLat,
+            zoom: 16
+        });
     } else {
-      alert("Invalid selection.");
+        alert("Invalid selection.");
     }
     closeModal();
 }
+
 function openResultsModal() {
     var modal = document.getElementById("resultsModal");
     modal.style.display = "block";
@@ -264,11 +259,10 @@ function closeModal() {
     settingsModal.style.display = "none";
 }
 
-// Add this new function to get country coordinates and fly to them
 function flyToCountry(countryName) {
     // Create Geocoding API URL
     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(countryName)}.json?access_token=${mapboxgl.accessToken}&types=country`;
-    
+
     fetch(url)
         .then(response => response.json())
         .then(data => {
