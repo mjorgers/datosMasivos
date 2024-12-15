@@ -4,6 +4,9 @@ FROM python:3.10-slim
 # Set the working directory in the container
 WORKDIR /app
 
+# Set environment variables
+ENV MONGODB_URI="mongodb://palm:oil123%21@localhost:27017/palmoildatabase"
+
 # Copy requirements file and install dependencies
 COPY logic/requirements.txt .
 

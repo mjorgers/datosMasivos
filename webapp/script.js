@@ -44,13 +44,21 @@ function updateStockPrices() {
 }
 
 map.on('load', function () {
-    fetch('demo.json')
-        .then(response => response.json())
+    fetch('http://localhost:5001/api/demodata')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             addOilMillMarkers(data);
             updatePolicyData(data);
         })
-        .catch(error => console.error('Error loading data:', error));
+        .catch(error => {
+            console.error('Error loading data:', error);
+            createAlert({'type': 'error', 'message': 'Failed to load map data', 'time': 5000});
+        });
 
     // Initial stock data load
     updateStockPrices();

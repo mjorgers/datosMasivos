@@ -14,12 +14,18 @@ datawarehouse_handler = DataWarehouseHadler()
 if __name__ == "__main__":
     print("Starting the Logic...", flush=True)
 
+    demo_json = open('demo.json')
+    demo_data = json.load(demo_json)
+
     # Extract data from different sources and transform it
     externalData_handler.extract()
     transformed_data = externalData_handler.transform()
 
     # Save the data in the datawarehouse
     datawarehouse_handler.load_data(transformed_data)
+
+    # Save the demo data in the datawarehouse
+    demo_data = datawarehouse_handler.load_demo_data(demo_data)
 
     print("Finished the Logic...", flush=True)
 
@@ -35,7 +41,17 @@ def get_data():
     if transformed_data == None:
         return jsonify({'error': 'Failed to fetch the transfomed data'})
 
-    return jsonify({'data:': transformed_data})
+    return jsonify(transformed_data)
+
+@app.route('/api/demodata', methods=['GET'])
+def get_demo_data():
+    
+    demo_data = datawarehouse_handler.read_demo_data()
+
+    if demo_data == None:
+        return jsonify({'error': 'Failed to fetch the demo data'})
+
+    return jsonify(demo_data)
 
 @app.route('/api/stock_price', methods=['GET'])
 def get_stock_price():
